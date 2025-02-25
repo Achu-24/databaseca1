@@ -7,7 +7,7 @@ app.use(express.json)
 
 mongoose
 .connect(process.env.MONGO_URI)
-.then(()=>console.log("Connected Successfully"))
+.then(()=>console.log(" Mongodb Connected Successfully"))
 .catch((err)=>console.log("Error Running",err))
 
 
@@ -52,4 +52,4 @@ app.get("/",(req,res)=>{
 })
 
 
-app.listen(port,()=>console.log(`Successfully Running on http://localhost:{port}`))
+app.listen(port,()=>console.log(`Successfully Running on http://localhost:${port}`));
