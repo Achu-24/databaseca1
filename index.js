@@ -47,6 +47,9 @@ const cost=mongoose.model(
         required:true
     })
 )
+app.get("/",(req,res)=>{
+    res.send("Running Successfully")
+})
 
 
 app.listen(port,()=>console.log(`Successfully Running on http://localhost:{port}`))
